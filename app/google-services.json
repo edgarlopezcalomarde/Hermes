@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "469619468505",
+    "project_id": "hermesapp-5223d",
+    "storage_bucket": "hermesapp-5223d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469619468505:android:d5b42e481e1bf8390ff6c8",
+        "android_client_info": {
+          "package_name": "com.edloca.hermes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469619468505-nuskvi6vhuo0tb1d0tdhkoc652g0kimb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edloca.hermes",
+            "certificate_hash": "5e7b9bec7d2f5f8c736162428bffe930da408ece"
+          }
+        },
+        {
+          "client_id": "469619468505-gnac843cmlojgco7f4vkfjebhdlsd1iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Scvn_VKFwN6iPS7XHiEQ1lAgj3rXmgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469619468505-gnac843cmlojgco7f4vkfjebhdlsd1iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

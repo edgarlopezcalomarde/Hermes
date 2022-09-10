@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/purple_dark"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileActivity">
+
+    <ProgressBar
+        android:id="@+id/barraCarga"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/user_profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/account_circle" />
+
+        <TextView
+            android:id="@+id/tvEmail3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Friend Tag"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvFriendTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="bottom"
+                android:text="@string/tv_user"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/editUsername"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/cancelEditUser"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cancel" />
+
+            <ImageView
+                android:id="@+id/acceptEditUser"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/check" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/field_background"
+            android:clickable="false"
+            android:ems="10"
+
+            android:enabled="true"
+            android:focusable="false"
+            android:fontFamily="@font/poppins"
+            android:inputType="textPersonName"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="bottom"
+                android:text="@string/tv_email"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/editEmail"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/cancelEditEmail"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cancel" />
+
+            <ImageView
+                android:id="@+id/acceptEditEmail"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/check" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/field_background"
+            android:clickable="false"
+            android:ems="10"
+            android:enabled="true"
+            android:focusable="false"
+            android:fontFamily="@font/poppins"
+            android:inputType="textEmailAddress"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnResetPasword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_background"
+            android:minHeight="48dp"
+            android:text="@string/btn_reset"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</LinearLayout>
